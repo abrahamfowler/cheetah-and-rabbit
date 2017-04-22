@@ -1,5 +1,7 @@
 # Cheetah and Rabbit Game
 
+# Part 1
+
 The task at hand was to create a game in which we had two entities - those being a cheetah and a rabbit. The aim of the game was to simulate a real life hunting experience in which the cheetah would chase down the rabbit and ‘eat’ it. You should be able to control the rabbit, and the cheetah would use artificial intelligence to locate the rabbit and block it from getting to it’s target and/or hunt it down. The way in which we achieved this was by applying an algorithm to the cheetah which enabled it to track the position of the rabbit and respond accordingly. In part one of the programme, we decided to use a Manhattan distance A* related algorithm to choose the cheetahs movements. This stopped it from chasing the rabbit but allowed it to intercept the rabbit on the way to it’s destination. This formula states that the distance of the sum of the all the Xi values minus the Yi values increasing through increments of i up to n will equate to the distance calculated.
  
 The Manhattan distance function computes the distance that would be traveled to get from one data point to the other if a grid-like path is followed. The Manhattan distance between two items is the sum of the differences of their corresponding components. (1) It does this by using the formula:
@@ -30,6 +32,8 @@ Linked lists will take two arguments: a pointer to the first node in the list, a
 
 All in all, we believe that part one of our cheetah vs rabbit game is an accurate simulation of a real world experience as the cheetah uses its own intelligence to intercept the rabbit on the path to it’s destination. It not only executes well but looks and feels like an enjoyable and well presented game. Be that the animations used (2)(3) or the ‘you lost’/’you won’ pages. It gives it the overall feel that we didn’t just do the bare minimum to create this game. A short coming of our programme is the fact that dependant on where the rabbit spawns and where its destination is (both random y values on polar sides of the x spectrum), it could be one straight line from the rabbit to go to the destination thus not giving the cheetah a chance to get into its position in time to stop it. This is something that we tried to fix in part 2 of our coursework.
 
+# Part 2
+
 The second task at hand was to further develop our first game, using our own intuition and creativity to add a personal touch to our project. As well as this we were instructed to print out the rabbit’s path after the game has ended, something which we were unfortunately unable to do. We imported the path finder library from Processing libraries to allow our pathfinding to run. We again used the vector grid system to set up our background.
 
 We have used a two to three dimensional vector, specifically a Euclidean (also known as geometric) vector. Since a vector is an entity that has both magnitude and direction. The datatype, however, stores the components of the vector (x,y for 2D, and x,y,z for 3D). The magnitude and direction can be accessed via the methods magnitude and heading.
@@ -48,8 +52,7 @@ After adding the second cheetah I thought that I could try to make it reflect re
 
 This is a print screen of part two of our game. It is evident that there are clearly many more obstacles than in the part one of the coursework, obstructing a straight path from rabbit to destination. You can also clearly see that one cheetah is headed directly towards the rabbit (using the A* Search Algorithm) whereas the other two are positioning themselves using the Euclidean distance and Manhattan distance to try and block the rabbit from reaching its destination alive.
 
-
-
+<img width="697" alt="screen shot 2017-04-22 at 11 55 40" src="https://cloud.githubusercontent.com/assets/22246185/25303986/ca6f3224-2755-11e7-8c48-afe3292e4358.png">
 
 This is a print screen of our you lost page. A feature that doesn’t add to the game but gives it a more professional look.
 The way our classes connect is that they use inheritance to extend from one another – such as Predator being a superclass to all the cheetah classes. We used things such as mousePressed to allow the user to move the rabbit instead of keypressed as it allowed the user to decide exactly where on the map they wished to move to.
