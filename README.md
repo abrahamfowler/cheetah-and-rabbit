@@ -8,6 +8,7 @@ The Manhattan distance function computes the distance that would be traveled to 
 
 This formula states that the distance of the sum of the all the Xi values minus the Yi values increasing through increments of 'i' up to 'n' will equate to the distance calculated.
 
+<img width="736" alt="screen shot 2017-04-22 at 11 37 34" src="https://cloud.githubusercontent.com/assets/22246185/25303835/b33805b6-2752-11e7-9d8b-f5196df4b716.png">
 
 
 
