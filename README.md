@@ -5,3 +5,9 @@ The task at hand was to create a game in which we had two entities - those being
 The Manhattan distance function computes the distance that would be traveled to get from one data point to the other if a grid-like path is followed. The Manhattan distance between two items is the sum of the differences of their corresponding components. (1) It does this by using the formula:
 
 <img width="455" alt="screen shot 2017-04-22 at 11 37 15" src="https://cloud.githubusercontent.com/assets/22246185/25303769/741325f6-2751-11e7-9453-d8a4a22a91c9.png">
+
+This formula states that the distance of the sum of the all the Xi values minus the Yi values increasing through increments of 'i' up to 'n' will equate to the distance calculated.
+
+
+
+
